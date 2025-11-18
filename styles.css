@@ -146,29 +146,92 @@ transition: opacity 10.5s ease;
 }
 
 /* Estilos para curriculo.html */
-#curriculo  {
-    font-family: system-ui, Arial;
-    background: #75cc91;
+#curr {
+font-family: system-ui, Arial;
+    background: #222;
+    color: #fff;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
-#curriculo .container {
-    position: relative;
-    background-color: #e30c0c;
-
+/* Seções do portfólio */
+#curr .header {
+background: linear-gradient(135deg, #4c805d, #3a5f46);
+padding: 50px 20px;
+text-align: center;
 }
-
-.minha-imagem {
-    width: clamp(150px, 30vw, 340px);
-    display: block;
-    margin-left: -100;
+#curr .header img {
+width: 180px;
+height: 180px;
+border-radius: 50%;
+object-fit: cover;
+border: 5px solid white;
 }
-@media (max-width: 480px) {
-    .minha-imagem {
-        width: 160px;
-        margin-left: 0;
-        margin-top: 10px;
-        transform: none;
-    }
+#curriculo .header h1 {
+margin-top: 20px;
+font-size: 34px;
+}
+#curriculo .header p {
+margin-top: 10px;
+font-size: 18px;
+opacity: .9;
+}
+#curriculo .section {
+max-width: 1100px;
+margin: 40px auto;
+padding: 20px;
+}
+#curriculo .section-title {
+font-size: 26px;
+font-weight: bold;
+border-left: 6px solid #4c805d;
+padding-left: 15px;
+margin-bottom: 20px;
+}
+/* Cards de projetos */
+#curriculo .projects {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 25px;
+}
+#curriculo .project {
+background: #333;
+padding: 20px;
+border-radius: 10px;
+transition: transform .3s;
+}
+#curriculo .project:hover {
+transform: translateY(-6px);
+}
+#curriculo .project h3 {
+margin-top: 0;
+font-size: 20px;
+}
+    /* Habilidades estilo barras */
+#curriculo .skill-bar {
+margin: 12px 0;
+}
+#curriculo .skill-bar span {
+display: block;
+font-size: 14px;
+margin-bottom: 5px;
+}
+#curriculo .skill-progress {
+height: 10px;
+background: #444;
+border-radius: 5px;
+overflow: hidden;
+}
+#curriculo .skill-progress div {
+height: 10px;
+background: #4c805d;
+}
+/* Rodapé */
+#curriculo .footer {
+background: #111;
+text-align: center;
+padding: 20px;
+margin-top: 40px;
+font-size: 14px;
+opacity: .8;
 }
