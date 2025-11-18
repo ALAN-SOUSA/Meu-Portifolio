@@ -1,0 +1,174 @@
+body {
+    font-family: system-ui, Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f4f6f8;
+    margin: 0;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .08);
+    width: 320px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 6px;
+    border: 1px solid #ccd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 16px;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    background: #0b74ff;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#msg {
+    margin-top: 8px;
+    color: #b02a37;
+    font-size: 13px;
+    min-height: 18px;
+}
+
+.hint {
+    font-size: 12px;
+    color: #556;
+    margin-top: 6px;
+}
+
+/* Estilos para criar-usuario.html */
+#criar-usuario body {
+    font-family: system-ui, Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f4f6f8;
+    margin: 0;
+}
+
+#criar-usuario .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .08);
+    width: 320px;
+}
+
+/* Estilos para login.html */
+#login body {
+    font-family: system-ui, Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #e8f0fe;
+    margin: 0;
+}
+
+#login .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
+    width: 300px;
+}
+
+.card {
+opacity: 0;
+transform: translateY(20px);
+animation: fadeInUp .7s ease forwards;
+}
+@keyframes fadeInUp {
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.message {
+opacity: 0;
+transform: translateY(-5px);
+transition: opacity .6s ease, transform .6s ease;
+}
+.message.show {
+opacity: 1;
+transform: translateY(0);
+}
+
+button:active {
+transform: scale(0.95);
+transition: transform .1s ease;
+}
+button.clicked {
+animation: pulse .4s ease;
+}
+@keyframes pulse {
+0% { transform: scale(1); }
+50% { transform: scale(1.07); }
+100% { transform: scale(1); }
+}
+
+.fade-out {
+opacity: 0;
+transition: opacity 10.5s ease;
+}
+body {
+opacity: 1;
+transition: opacity 10.5s ease;
+}
+
+/* Estilos para curriculo.html */
+#curriculo  {
+    font-family: system-ui, Arial;
+    background: #75cc91;
+    margin: 0;
+    padding: 20px;
+}
+
+#curriculo .container {
+    position: relative;
+    background-color: #e30c0c;
+
+}
+
+.minha-imagem {
+    width: clamp(150px, 30vw, 340px);
+    display: block;
+    margin-left: -100;
+}
+@media (max-width: 480px) {
+    .minha-imagem {
+        width: 160px;
+        margin-left: 0;
+        margin-top: 10px;
+        transform: none;
+    }
+}

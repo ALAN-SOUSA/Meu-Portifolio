@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="criar-usuario">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar usuário e senha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="criar-usuario">
+    <form id="signup" class="card" novalidate>
+
+        
+        <h2 style="margin:0 0 8px 0; font-size:18px;">Criar conta</h2>
+
+        <label for="username">Nome de usuário</label>
+        <input id="username" name="username" type="text" required minlength="3"
+                     pattern="[A-Za-z0-9_]+" title="Use letras, números e underscore (mín 3 caracteres)" />
+
+        <label for="password">Senha</label>
+        <input id="password" name="password" type="password" required minlength="8"
+                     pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}"
+                     title="Mín 8 caracteres, com maiúscula, minúscula, número e símbolo" />
+        <div class="hint">Mínimo 8 caracteres, com 1 maiúscula, 1 minúscula, 1 número e 1 símbolo.</div>
+
+        <label for="confirm">Confirmar senha</label>
+        <input id="confirm" name="confirm" type="password" required />
+
+        <div class="row">
+            <input id="show" type="checkbox" />
+            <label for="show" style="margin:0; font-size:14px;">Mostrar senhas</label>
+        </div>
+
+        <div id="msg" aria-live="polite"></div>
+
+        
+
+        <button type="submit">Entrar</button>
+        <a href="login.html">Já tem conta? Entrar</a>
+    </form>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
