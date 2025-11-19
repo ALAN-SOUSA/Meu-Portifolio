@@ -86,7 +86,7 @@ setTimeout(() => loginMsg.classList.remove('show'), 2000);
             setTimeout(() => {
             document.body.classList.add('fade-out');
             setTimeout(() => {
-            window.location.href = 'index.html';
+            window.location.href = 'curriculo.html';
             }, 600);
             }, 700);
  
@@ -100,3 +100,4 @@ setTimeout(() => loginMsg.classList.remove('show'), 2000);
     });
 
 }
+
